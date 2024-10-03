@@ -9,7 +9,6 @@ const Home = () => {
   return (
     <main className={styles.main}>
       <div className={styles.container}>
-      <p>{Text}</p>
       <Citation citationString=" " />
         <Chat />
       </div>
