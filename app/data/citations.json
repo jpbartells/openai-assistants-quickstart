@@ -1,0 +1,12 @@
+[
+    {
+      "referenceIndex": "10",
+      "subIndex": "0",
+      "source": "https://example.com/source1"
+    },
+    {
+      "referenceIndex": "11",
+      "subIndex": "1",
+      "source": "https://example.com/source2"
+    }
+  ]
