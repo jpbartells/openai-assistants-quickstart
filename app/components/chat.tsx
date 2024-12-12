@@ -40,13 +40,14 @@ const CodeMessage = ({ text }: { text: string }) => {
 };
 
 const Message = ({ role, text }: MessageProps) => {
+  const filteredText = text.replace(/\【.*?】/g, "");
   switch (role) {
     case "user":
-      return <UserMessage text={text} />;
+      return <UserMessage text={filteredText} />;
     case "assistant":
-      return <AssistantMessage text={text} />;
+      return <AssistantMessage text={filteredText} />;
     case "code":
-      return <CodeMessage text={text} />;
+      return <CodeMessage text={filteredText} />;
     default:
       return null;
   }
