@@ -72,7 +72,7 @@
 .userMessage {
   align-self: flex-end;
   color: #fff;
-  background-color: #000;
+  background-color: #e90000;
 }
 
 .assistantMessage {
