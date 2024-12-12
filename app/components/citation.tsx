@@ -2,11 +2,11 @@ import { useEffect, useState } from 'react';
 import { parseCitation } from '../utils/parseCitation';
 import citations from '../data/citations.json';
 
-const Citation = ({ citationString }) => {
+const Citation = ({ text }) => {
   const [citationData, setCitationData] = useState(null);
 
   useEffect(() => {
-    const parsedCitation = parseCitation(citationString);
+    const parsedCitation = parseCitation(text);
 
     if (parsedCitation) {
       // Find the citation source from the data
@@ -17,7 +17,7 @@ const Citation = ({ citationString }) => {
       );
       setCitationData(citation);
     }
-  }, [citationString]);
+  }, [text]);
 
   if (!citationData) return null;
 
